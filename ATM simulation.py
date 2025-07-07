@@ -1,3 +1,4 @@
+#Start from Greeting To User and Basic Account Details
 print("Welcome ot the Simple ATM Simulator!")
 
 balance = 1000
@@ -5,13 +6,13 @@ balance = 1000
 user_pin = '1234'
 
 entered_pin = input("Please enter your PIN: ")
-
+#Handling Invalid Pin
 if entered_pin != user_pin:
     print("Invalid PIN. Exiting.")
     atm_on = False
 else:
     atm_on = True
-
+#Showing Menu and Options to User
 while atm_on:
     print("Main Menu:")
     print("1. Check Balance")
